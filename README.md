@@ -1,8 +1,8 @@
 # keeper
 简单基于crontab的docker脚本守护管理工具
 
-##使用方法：
-####启动守护进程
+## 使用方法：
+#### 启动守护进程
 在宿主机crontab添加
 
 ```
@@ -10,7 +10,7 @@
 * * * * *  ./keeper.sh -a "docker_phptest2" -b "docker exec -i docker_php php phptest2.php" 
 ```
 
-####展示正在运行的脚本
+#### 展示正在运行的脚本
 
 命令行运行  
 `./show.sh` 
@@ -24,13 +24,13 @@ docker_phptest2: pid:64759 running
 Enter name to kill script >
 ```
 
-####重启正在运行的脚本
+#### 重启正在运行的脚本
 
 命令行运行 
 `./kill.sh docker_phptest1` 
 
 
-####重启所有正在运行的脚本
+#### 重启所有正在运行的脚本
 
 命令行运行 
 `./killall.sh`
